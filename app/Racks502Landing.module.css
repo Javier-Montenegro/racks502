@@ -384,12 +384,20 @@
   background: rgba(0, 0, 0, 0.75);
 }
 
-.valuePropsContent {
+/* .valuePropsContent {
   position: relative;
   z-index: 10;
   max-width: 1320px;
   margin: 0 auto;
   max-width: 700px;
+} */
+
+.valuePropsContent {
+  position: relative;
+  z-index: 10;
+  max-width: 700px;
+  margin: 0;
+  padding-left: 24px;
 }
 
 .valuePropsTitle {
@@ -409,6 +417,7 @@
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.7;
   margin: 0 0 20px 0;
+    background: rgba(20, 20, 20, 0.5);
 }
 
 /* Product Details Section */

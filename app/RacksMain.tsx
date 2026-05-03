@@ -62,7 +62,7 @@ export function Racks502Landing() {
           <div className={styles.logoContainer}>
             <a href="#" className={styles.logoLink}>
               <ImageWithFallback
-                src="/logo.jpeg"
+                src="/logo_header.jpg"
                 alt="RACKS502 Logo"
                 className={styles.logo}
                  width={75}
@@ -375,12 +375,12 @@ export function Racks502Landing() {
                 }
               />
               <Image
-                src="/carousel1.jpeg"
+                src="/detalle4.jpeg"
                 alt="Detalle 3"
                 className={`${styles.showcaseSmallImage} ${styles.zoomable}`}
                 onClick={() =>
                   setLightboxImage(
-                    "/carousel1.jpeg"
+                    "/detalle4.jpeg"
                   )
                 }
                 width={248}
@@ -526,7 +526,7 @@ export function Racks502Landing() {
             </p>
           </div>
           <div className={styles.footerLinks}>
-            <div className={styles.footerColumn}>
+            {/* <div className={styles.footerColumn}>
               <h4 className={styles.footerColumnTitle}>
                 ENLACES
               </h4>
@@ -544,8 +544,8 @@ export function Racks502Landing() {
                   <a href="#contacto">Contacto</a>
                 </li>
               </ul>
-            </div>
-            <div className={styles.footerColumn}>
+            </div> */}
+            {/* <div className={styles.footerColumn}>
               <h4 className={styles.footerColumnTitle}>
                 PRODUCTOS
               </h4>
@@ -562,7 +562,7 @@ export function Racks502Landing() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className={styles.footerColumn}>
               <h4 className={styles.footerColumnTitle}>
                 CONTÁCTANOS
