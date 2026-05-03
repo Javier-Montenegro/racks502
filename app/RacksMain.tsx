@@ -137,7 +137,7 @@ export function Racks502Landing() {
               www.racks502.com
             </a>
             <a
-              href="https://facebook.com/racks502"
+              href="https://www.facebook.com/profile.php?id=61560357857942"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.heroLink}
@@ -587,8 +587,13 @@ export function Racks502Landing() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://facebook.com/racks.502" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/profile.php?id=61560357857942" target="_blank" rel="noopener noreferrer">
                     📧 Facebook
+                  </a>
+                </li>
+                   <li>
+                  <a href="mailto:ventas@racks502.com" target="_blank" rel="noopener noreferrer">
+                    📧 ventas@racks502.com
                   </a>
                 </li>
               </ul>
