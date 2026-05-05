@@ -125,7 +125,7 @@ export function Racks502Landing() {
             HECHO PARA CARGAR
             <br />
             <span className={styles.valuePropsAccent}>
-              LISTO PARA CARGAR
+              LISTO PARA EXPLORAR
             </span>
           </h2>
             </div>
