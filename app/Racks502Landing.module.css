@@ -98,9 +98,10 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
   margin-top: 70px;
+  padding-left: 50px;
 }
 
 .heroImage {
@@ -128,19 +129,47 @@
 }
 
 .heroContent {
-  /* position: relative;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
   z-index: 10;
-  max-width: 1320px;
-  padding: 0 24px;
-  width: 100%; */
-    position: absolute;
-  left: 24px;
-  bottom: 200px;
-  z-index: 10;
-  width: auto;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
   gap: 16px;
+  max-width: 620px;
+}
+
+.heroIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+}
+
+.heroIntroLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+}
+
+.heroIntroText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.heroIntroLine {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .heroTitle {
@@ -188,6 +217,7 @@
   transition: all 0.3s;
   border-radius: 4px;
   letter-spacing: 0.5px;
+  width: 60%;
 }
 
 .ctaButton:hover {
@@ -401,10 +431,10 @@
 }
 
 .valuePropsTitle {
-  font-size: 56px;
+  font-size: 45px;
   font-weight: 900;
   line-height: 1.1;
-  margin: 0 0 32px 0;
+  margin: 0 0 15px 0;
   color: #fff;
 }
 
@@ -714,14 +744,6 @@
   font-weight: 600;
 }
 
-.heroLinks {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  bottom: -175%;
-  position: absolute;
-}
-
 .heroLink {
   display: flex;
   align-items: center;
@@ -735,6 +757,36 @@
 
 .heroLink:hover {
   color: #fdb913;
+}
+
+.heroLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    max-width: none;
+  }
+
+  .heroIntro {
+    align-items: flex-start;
+  }
+
+  .heroIntroLine {
+    font-size: 16px;
+  }
+
+  .ctaButton {
+    justify-content: center;
+    padding: 14px 18px;
+  }
+
+  .heroLinks {
+    gap: 10px;
+  }
 }
 
 /* Responsive Design */
@@ -807,6 +859,10 @@
     font-size: 38px;
   }
 
+  .carouselSlide {
+    padding: 0;
+  }
+
   .finalCtaTitle {
     font-size: 32px;
   }
@@ -836,4 +892,26 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
+  .valuePropsTitle {
+    font-size: 25px;
+  }
+
+    .ctaButton {
+    width: 100%;
+  }
+
+  .heroImage {
+  object-position: 45% -10%;
+}
+
+.showcaseMediumImage {
+  height: 100%;
+}
+
+.showcaseSmallImage {
+  height: 130%;
+}
+.productDetailsCarouselWrapper {
+  max-width: 300px;
+}
 }

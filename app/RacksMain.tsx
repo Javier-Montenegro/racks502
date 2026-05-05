@@ -11,7 +11,7 @@ export function Racks502Landing() {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "50255756434";
+    const phoneNumber = "50230567796";
     const message =
       "Hola! Me interesa conocer más sobre los racks RACKS502.";
     window.open(
@@ -98,13 +98,38 @@ export function Racks502Landing() {
       <section className={styles.hero}>
         <div className={styles.heroOverlay}></div>
         <Image
-          src="/inicio.jpeg"
+          src="/inicio.jpg"
           alt="RACKS502 Pickup Truck"
           className={styles.heroImage}
           width={1536}
           height={1024}
         />
         <div className={styles.heroContent}>
+          <div className={styles.heroIntro}>
+            <div className={styles.heroIntroLogo}>
+              <Image
+                src="/logo_no_bg.png"
+                alt="Logo RACKS502"
+                width={200}
+                height={143}
+              />
+            </div>
+            <div className={styles.heroIntroText}>
+              {/* <p className={styles.valuePropsTitle}>
+                HECHO PARA CARGAR
+              </p>
+              <p className={styles.valuePropsAccent}>
+                LISTO PARA EXPLORAR
+              </p> */}
+               <h2 className={styles.valuePropsTitle}>
+            HECHO PARA CARGAR
+            <br />
+            <span className={styles.valuePropsAccent}>
+              LISTO PARA CARGAR
+            </span>
+          </h2>
+            </div>
+          </div>
           <button
             className={styles.ctaButton}
             onClick={handleWhatsAppClick}
@@ -335,17 +360,21 @@ export function Racks502Landing() {
                 height={380}
               />
               <div className={styles.showcaseMediumColumn}>
-                <ImageWithFallback
+                <Image
                   src="/detalle1.jpeg"
                   alt="Vista lateral rack"
                   className={`${styles.showcaseMediumImage} ${styles.zoomable}`}
                   onClick={() => setLightboxImage("/detalle1.jpeg")}
+                  width={100}
+                  height={184}
                 />
-                <ImageWithFallback
+                <Image
                   src="/detalle3.jpeg"
                   alt="Detalle estructura"
                   className={`${styles.showcaseMediumImage} ${styles.zoomable}`}
                   onClick={() => setLightboxImage("/detalle3.jpeg")}
+                  width={100}
+                  height={184}
                 />
               </div>
             </div>
@@ -364,7 +393,7 @@ export function Racks502Landing() {
                 width={248}
                 height={200}
               />
-              <ImageWithFallback
+              <Image
                 src="/detalle2.jpeg"
                 alt="Detalle 2"
                 className={`${styles.showcaseSmallImage} ${styles.zoomable}`}
@@ -373,6 +402,8 @@ export function Racks502Landing() {
                     "/detalle2.jpeg"
                   )
                 }
+                 width={248}
+                height={200}
               />
               <Image
                 src="/detalle4.jpeg"

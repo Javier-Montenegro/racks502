@@ -123,6 +123,35 @@
   width: 100%;
 }
 
+.heroIntro {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.heroIntroLogo {
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.heroIntroText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.heroIntroLine {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
 .heroTitle {
   font-size: 72px;
   font-weight: 900;
@@ -327,6 +356,55 @@
   height: 192px;
   object-fit: cover;
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+  }
+
+  .hero {
+    min-height: 75vh;
+    padding-top: 80px;
+  }
+
+  .heroContent {
+    padding: 0 16px;
+  }
+
+  .heroIntro {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .heroIntroLogo {
+    min-width: auto;
+  }
+
+  .heroIntroLine {
+    font-size: 16px;
+  }
+
+  .ctaButton {
+    justify-content: center;
+    padding: 14px 20px;
+  }
+
+  .heroLinks {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
 }
 
 .zoomable {
@@ -557,6 +635,7 @@
   transition: all 0.3s;
   border-radius: 4px;
   letter-spacing: 0.5px;
+  width: 90%;
 }
 
 .finalCtaButton:hover {
